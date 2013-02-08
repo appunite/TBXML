@@ -50,6 +50,7 @@ enum TBXMLErrorCodes {
     D_TBXML_ELEMENT_TEXT_IS_NIL,
     D_TBXML_ATTRIBUTE_IS_NIL,
     D_TBXML_ATTRIBUTE_NAME_IS_NIL,
+    D_TBXML_ATTRIBUTE_VALUE_IS_NIL,
     D_TBXML_ATTRIBUTE_NOT_FOUND,
     D_TBXML_PARAM_NAME_IS_NIL
 };
@@ -173,8 +174,8 @@ typedef void (^TBXMLIterateAttributeBlock)(TBXMLAttribute *attribute, NSString *
 - (id)initWithXMLFile:(NSString*)aXMLFile fileExtension:(NSString*)aFileExtension __attribute__((deprecated));
 
 
-- (int) decodeData:(NSData*)data;
-- (int) decodeData:(NSData*)data withError:(NSError **)error;
+- (NSInteger) decodeData:(NSData*)data;
+- (NSInteger) decodeData:(NSData*)data withError:(NSError **)error;
 
 @end
 
