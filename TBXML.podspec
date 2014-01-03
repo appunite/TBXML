@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name     = 'TBXML'
-  s.version  = '1.55'
+  s.version  = '1.6'
   s.license  = 'MIT'
   s.summary  = 'Super-fast, lightweight, easy to use XML parser for the Mac & iOS.'
   s.homepage = 'http://www.tbxml.co.uk'
   s.author   = { 'Tom Bradley' => 'tom@tbxml.co.uk' }
   s.source   = {
     :git => 'https://github.com/piotrbernad/TBXML.git',
-    :tag => '1.55'
+    :tag => 'v1.6'
   }
   s.description = %{
     TBXML is a light-weight XML document parser written in Objective-C
