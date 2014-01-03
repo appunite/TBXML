@@ -5,9 +5,7 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
 
-    // -- NOTE: This code seems to was missing here for iOS targets with Xcode Version 5.0.1 (5A2053). I copied it 1:1 from file "TBXML-Prefix.pch"
-
-    // define some LLVM3 macros if the code is compiled with a different compiler (ie LLVMGCC42)
+	// define some LLVM3 macros if the code is compiled with a different compiler (ie LLVMGCC42)
     #ifndef __has_feature
     #define __has_feature(x) 0
     #endif
@@ -53,5 +51,4 @@
     #endif
 
     #endif // __clang_major__ < 3
-
 #endif
